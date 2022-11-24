@@ -1,0 +1,23 @@
+{
+  "name": "proyectots",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start:types": "tsc basics/types.ts --outdir dist/ && node dist/types.js",
+    "start:enums": "tsc basics/enums.ts --outdir dist/ && node dist/enums.js",
+    "start:interfaces": "tsc basics/interfaces.ts --outdir dist/ && node dist/interfaces.js",
+    "start:customTypes": "tsc basics/customTypes.ts --outdir dist/ && node dist/customTypes.js",
+    "start:classes": "tsc basics/classes.ts --outdir dist/ && node dist/classes.js",
+    "start:functions": "tsc basics/functions.ts --outdir dist/ && node dist/functions.js",
+    "start:namespace": "tsc advanced/namespaces/namespaces.ts --outFile dist/namespace.js && node dist/namespace.js",
+    "start:namespaces": "tsc advanced/namespaces/namespaces.ts advanced/namespaces/index.ts --outFile dist/namespaces.js && node dist/namespaces.js",
+    "start:modules": "tsc advanced/modules/index.ts --outdir dist/modules.js && node dist/modules.js",
+    "start:generics":"tsc advanced/generics.ts --outdir dist/ && node dist/generics.js",
+    "start:decorators":"tsc advanced/decorators.ts && node dist/decorators.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
