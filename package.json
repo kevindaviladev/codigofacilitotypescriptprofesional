@@ -13,11 +13,14 @@
     "start:namespace": "tsc advanced/namespaces/namespaces.ts --outFile dist/namespace.js && node dist/namespace.js",
     "start:namespaces": "tsc advanced/namespaces/namespaces.ts advanced/namespaces/index.ts --outFile dist/namespaces.js && node dist/namespaces.js",
     "start:modules": "tsc advanced/modules/index.ts --outdir dist/modules.js && node dist/modules.js",
-    "start:generics":"tsc advanced/generics.ts --outdir dist/ && node dist/generics.js",
-    "start:decorators":"tsc advanced/decorators.ts && node dist/decorators.js",
+    "start:generics": "tsc advanced/generics.ts --outdir dist/ && node dist/generics.js",
+    "start:typeC":"tsc advanced/typeCompatibility.ts --outdir dist/ && node dist/typeCompatibility.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^18.11.9"
+  }
 }
